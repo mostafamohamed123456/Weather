@@ -1,0 +1,189 @@
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+    font-family:Arial, Tahoma, sans-serif;
+}
+.parent{
+    height: 80vh;
+    background:#7173f1;
+    text-align:center;
+}
+.parent nav{
+    display:flex;
+    justify-content:space-evenly;
+    background:#5153c2;
+    padding:15px;
+    border-bottom:1px solid #222;
+    box-shadow:0px 0px 4px #000;
+    position:fixed;
+    width:100%;
+}
+.parent nav h2{
+    color:#EEE;
+    letter-spacing:3px;
+    font-family: 'Pattaya', sans-serif;
+}
+.parent nav ul{
+    list-style-type:none;
+    margin-top: 6px;
+}
+.parent nav ul li{
+    display:inline-block;
+}
+.parent nav ul li a{
+    color:#EEE;
+    text-decoration:none;
+    margin-right:22px;
+    font-family:Tahoma, sans-serif;
+    text-transform: uppercase;
+    transition:all .5s ease-in-out;
+}
+.parent nav ul li a:hover{
+    font-weight:bold;
+}
+.parent .container{
+    display:flex;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+}
+.parent .container > div{
+    width:300px;
+    height:300px;
+    background:#333;
+    border-radius:7px;
+    margin: 90px 0px;
+}
+.parent .container div .day{
+    color:#EEE;
+    text-align: left;
+    background:#111;
+    padding:10px;
+    border-top-right-radius:7px;
+    border-top-left-radius:7px;
+}
+.parent .container div .city{
+    display:block;
+    text-align:left;
+    padding:10px;
+    color:#EEE;
+    font-size:18px;
+    font-family: 'Pattaya', sans-serif;
+}
+.parent .container div .temp-cont{
+    display:flex;
+    padding:10px;
+    margin-top: 28px;
+}
+.parent .container div .temp-cont img{
+    width:90px; 
+    height:90px;
+    margin-top: -18px;
+}
+.parent .container div .temp-cont .temp-parent{
+    margin-right:60px;
+}
+.parent .container div .temp-cont .temp-parent span{
+    font-size:50px;
+    font-family:Arial, Tahoma, sans-serif;
+    font-weight:bold;
+    color:#EEE;
+}
+.parent .container div .high-low-container div{
+    display:inline-block;
+    margin: 30px 30px;
+}
+.parent .container div .high-low-container div span{
+    color:#EEE;
+    font-family:Arial, Tahoma, sans-serif;
+    font-weight:bold;
+}
+
+.parent .search-container{
+    width:800px;
+    margin: 0px auto;
+    display:flex;
+    justify-content:center;
+}
+.parent .search-container input[type='search']{
+    width:60%;
+    outline:none;
+    padding:8px;
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+    font-size:18px;
+    border:0px;
+}
+.parent .search-container input[type='search']::placeholder{
+    font-family:'Pattaya',Arial,Tahoma,sans-serif;
+}
+.parent .search-container input[type='submit']{
+    width:20%;
+    outline:none;
+    padding:8px;
+    cursor:pointer;
+    background:#333;
+    color:#EEE;
+    font-family:Arial,Tahoma,sans-serif;
+    border-top-right-radius:7px;
+    border-bottom-right-radius:7px;
+    border:0px;
+    font-size:18px;
+}
+.parent .city-temperature{
+    width:300px;
+    height:300px;
+    background:#333;
+    border-radius:7px;
+    margin: 30px auto;
+}
+.parent .city-temperature.hide-box{
+    display:none;
+}
+.parent .city-temperature .day{
+    color:#EEE;
+    text-align: left;
+    background:#111;
+    padding:10px;
+    border-top-right-radius:7px;
+    border-top-left-radius:7px;
+} 
+.parent .city-temperature .city{
+    display:block;
+    text-align:left;
+    padding:10px;
+    color:#EEE;
+    font-size:18px;
+    font-family: 'Pattaya', sans-serif;
+} 
+.parent .city-temperature .temp-cont{
+    display:flex;
+    padding:10px;
+    margin-top: 28px;
+}
+.parent .city-temperature .temp-cont img{
+    width:90px; 
+    height:90px;
+    margin-top: -18px;
+}
+.parent .city-temperature .temp-cont .temp-parent{
+    margin-right:60px;
+}
+.parent .city-temperature .temp-cont .temp-parent span{
+    font-size:50px;
+    font-family:Arial, Tahoma, sans-serif;
+    font-weight:bold;
+    color:#EEE;
+}
+.parent .city-temperature .high-low-container div{
+    display:inline-block;
+    margin: 30px 30px;
+}
+.parent .city-temperature .high-low-container div span{
+    color:#EEE;
+    font-family:Arial, Tahoma, sans-serif;
+    font-weight:bold;
+}

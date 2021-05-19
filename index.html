@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>weblearn</title>
+        <link href="css/weather.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="parent">
+            <nav>
+                <h2>Weather</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <div class="first-city">
+                    <h3 class="day"></h3>
+                    <span class="city"></span>
+                    <div class="temp-cont">
+                        <div class="temp-parent"><span id="temp"></span></div>
+                        <img src="" alt="weather-descreption" title="">
+                    </div>
+                    <div class="high-low-container">
+                        <div class="temp-parent"><span id="high-temp"></span></div>
+                        <div class="temp-parent"><span id="low-temp"></span></div>
+                    </div>
+                </div>
+                <div class="Sec-city">
+                    <h3 class="day"></h3>
+                    <span class="city"></span>
+                    <div class="temp-cont">
+                        <div class="temp-parent"><span id="temp"></span></div>
+                        <img src="" alt="weather-descreption" title="">
+                    </div>
+                    <div class="high-low-container">
+                        <div class="temp-parent"><span id="high-temp"></span></div>
+                        <div class="temp-parent"><span id="low-temp"></span></div>
+                    </div>
+                </div>
+                <div class="third-city">
+                    <h3 class="day"></h3>
+                    <span class="city"></span>
+                    <div class="temp-cont">
+                        <div class="temp-parent"><span id="temp"></span></div>
+                        <img src="" alt="weather-descreption" title="">
+                    </div>
+                    <div class="high-low-container">
+                        <div class="temp-parent"><span id="high-temp"></span></div>
+                        <div class="temp-parent"><span id="low-temp"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-container">
+                <input type="search" autocomplete="off" placeholder='Search your city!'>
+                <input type="submit" value="Search">
+            </div>
+            <div class="city-temperature hide-box">
+                <h3 class="day"></h3>
+                <span class="city"></span>
+                <div class="temp-cont">
+                    <div class="temp-parent"><span id="temp">-&deg;C</span></div>
+                    <img src="img/unknown_weather-512.png" alt="weather-descreption" title="">
+                </div>
+                <div class="high-low-container">
+                    <div class="temp-parent"><span id="high-temp"></span></div>
+                    <div class="temp-parent"><span id="low-temp"></span></div>
+                </div>
+            </div>
+        </div>
+        <script src="js/weather.js"></script>
+    </body>
+</html>
