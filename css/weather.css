@@ -7,10 +7,16 @@
     padding:0;
     font-family:Arial, Tahoma, sans-serif;
 }
+body{
+    background:#EEE;
+    
+}
+/* Start of weather */
 .parent{
     height: 80vh;
     background:#7173f1;
     text-align:center;
+    margin-bottom:190px;
 }
 .parent nav{
     display:flex;
@@ -21,6 +27,7 @@
     box-shadow:0px 0px 4px #000;
     position:fixed;
     width:100%;
+    z-index: 2;
 }
 .parent nav h2{
     color:#EEE;
@@ -55,7 +62,7 @@
     height:300px;
     background:#333;
     border-radius:7px;
-    margin: 90px 0px;
+    margin: 90px 0px 30px;
 }
 .parent .container div .day{
     color:#EEE;
@@ -119,6 +126,7 @@
 }
 .parent .search-container input[type='search']::placeholder{
     font-family:'Pattaya',Arial,Tahoma,sans-serif;
+    font-weight: 100;
 }
 .parent .search-container input[type='submit']{
     width:20%;
@@ -187,3 +195,144 @@
     font-family:Arial, Tahoma, sans-serif;
     font-weight:bold;
 }
+/* End of weather */
+/* Start of gallery */
+.photo{
+    width: 715px;
+    margin: 80px auto;
+    text-align: center;
+}
+.photo h3{
+    text-align: left;
+    font-size: 23px;
+    font-family: Tahoma,sans-serif;
+    font-weight: 400;
+    color:#222
+}
+.photo .gallery{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position:relative;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+}
+.photo .gallery img{
+    height:200px;
+    width:200px;
+    border-radius:7px;
+    margin-top: 20px;
+    margin-right:40px;
+    cursor:pointer;
+    transition:all .7s ease-in-out;
+}
+.photo .gallery img:hover{
+    transform: translate3d(0,-10px,120px);
+}
+.gallery-name{
+    display:flex;
+    justify-content: space-evenly;
+}
+.gallery-name span{
+    margin-top: 10px;
+    margin-right: 192px;
+    color:#666;
+    font-family: 'Play', sans-serif;
+    font-size:18px;
+}
+.gallery-name .countries2{
+    margin-left: -17px;
+}
+/* End of gallery */
+/* Start About */
+.about{
+    background:#7173f1;
+    min-height: 30vh;
+    padding:70px;
+    display: flex;
+    justify-content: center;
+}
+.about .left-hand-side h3{
+    font-size:30px;
+    color:#32EEa0;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-family:'Play', sans-serif;
+    margin-bottom:10px;
+}
+.about .left-hand-side ul{
+    list-style-type:none;
+}
+.about .left-hand-side ul li i{
+    background:#EEE;
+    color:#32FFa0;
+    border-radius: 100%;
+    margin-right:8px;
+}
+.about .left-hand-side ul li{
+    margin: 30px 0;
+    font-size:18px;
+    font-family:'Play', sans-serif;
+    color:#EEE;
+    text-transform:capitalize;
+    width: 100%;
+}
+/* End About */
+/* Start of Contact */
+.contact{
+    padding:40px;
+    position: relative;
+}
+.contact h3{
+    background: #EEE;
+    position: absolute;
+    margin: 0 30px;
+    top: 23px;
+    font-size: 24px;
+    font-family: 'Play';
+    text-transform: capitalize;
+}
+.contact form{
+    border:1px solid #000;
+    padding: 20px 40px;
+    border-radius:5px;
+}
+.contact form input, label{
+    display: block;
+}
+.contact form label{
+    margin-bottom: 10px;
+    font-family:'Play',sans-serif;
+    font-size:20px;
+    color:#777;
+    text-decoration:underline;
+}
+.contact form input:not(input[type="submit"]){
+    margin-bottom: 30px;
+    width:350px;
+    border-radius:7px;
+    padding:8px;
+    outline:none;
+    font-size:20px;
+    border:0px;
+}
+.contact form input::placeholder{
+    font-family:Arial,Tahoma,sans-serif;
+    font-style:italic;
+    font-size:16px;
+    font-family:'Play',sans-serif;
+}
+.contact form input[type="submit"]{
+    width:120px;
+    border:0px;
+    border-radius:7px;
+    background:#7173f1;
+    font-family:'Play',sans-serif;
+    color:#EEE;
+    font-size:18px;
+    padding:10px;
+    cursor:pointer;
+    outline:none;
+}
+/* End of Contact */

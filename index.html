@@ -7,16 +7,18 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Play&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="parent">
             <nav>
                 <h2>Weather</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Photos</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#photo">Photos</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="container">
@@ -73,6 +75,46 @@
                     <div class="temp-parent"><span id="low-temp"></span></div>
                 </div>
             </div>
+        </div>
+        <div class="photo" id="photo">
+            <h3>Live Cameras</h3>
+            <div class="gallery">
+                <img src="img/01.jpg" alt="london" title="london">
+                <img src="img/02.jpg" alt="paris" title="paris">
+                <img src="img/03.jpg" alt="cairo" title="cairo">
+            </div>
+            <div class="gallery-name">
+                <span class="countries1">London</span>
+                <span class="countries2">Paris</span>
+                <span class="countries3">Cairo</span>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="left-hand-side">
+                <h3>uses for our site</h3>
+                <ul>
+                    <li> <i class="fa fa-check-circle"></i>search the city you want to know the weather.</li>
+                    <li> <i class="fa fa-check-circle"></i>get the current weather of the day.</li>
+                    <li> <i class="fa fa-check-circle"></i>get the highest and lowest weather of the city.</li>
+                    <li> <i class="fa fa-check-circle"></i>get the description of the sky.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h3>get in touch</h3>
+            <form action="" method="Post">
+                <label>First name</label>
+                <input type="text" placeholder="Enter First Username" name="f-name">
+                <label>Last name</label>
+                <input type="text" placeholder="Enter Last Username" name="l-name">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" name="password">
+                <label>Re-Password</label>
+                <input type="password" placeholder="Re-Enter Password" name="password">
+                <label>Email</label>
+                <input type="email" placeholder="example@mail.com" name="email">
+                <input type="submit" value="Submit">
+            </form>
         </div>
         <script src="js/weather.js"></script>
     </body>
