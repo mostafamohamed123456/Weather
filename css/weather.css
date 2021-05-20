@@ -305,6 +305,39 @@ body{
         margin: 53px;
     }
 }
+@media (min-width:500px) AND (max-width:742px){
+    .photo{
+        width: 505px;
+    }
+    .photo h3{
+        text-align: center;
+    }
+    .photo .gallery{
+        flex-direction: column;
+    }
+    .photo .gallery img{
+        margin-right:0
+    }
+    .gallery-name{
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .gallery-name span{
+        top: 0;
+        position: absolute;
+        margin-right: 0;
+    }
+    .gallery-name .countries1{
+        top: -453px;
+    }
+    .gallery-name .countries2{
+        top: -231px;
+    }
+    .gallery-name .countries3{
+        top: -13px;
+    }
+}
 /* End of gallery */
 /* Start About */
 .about{
